@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Tonypi_urdf">
+  <link
+    name="body_link">
+    <inertial>
+      <origin
+        xyz="-0.00024383 0.002616 0.040576"
+        rpy="0 0 0" />
+      <mass
+        value="0.3526" />
+      <inertia
+        ixx="0.00025406"
+        ixy="1.5547E-07"
+        ixz="-4.1957E-07"
+        iyy="0.00011327"
+        iyz="-7.8613E-07"
+        izz="0.0001823" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/body_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/body_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="right_leg_Link1">
+    <inertial>
+      <origin
+        xyz="0.000296062468953784 0.000106244946642978 -0.0477126536424364"
+        rpy="0 0 0" />
+      <mass
+        value="0.036109580786353" />
+      <inertia
+        ixx="5.65290395562587E-06"
+        ixy="-4.97867950075779E-10"
+        ixz="3.65971205105565E-08"
+        iyy="9.56874596870966E-06"
+        iyz="2.80101618554125E-08"
+        izz="6.33000855530587E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_leg_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_leg_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_leg1"
+    type="revolute">
+    <origin
+      xyz="0.000 -0.0382635 -0.00"
+      rpy="0 0 0" />
+    <parent
+      link="body_link" />
+    <child
+      link="right_leg_Link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_leg_Link2">
+    <inertial>
+      <origin
+        xyz="2.00031011385847E-08 2.33956783807221E-09 -0.0244008962621316"
+        rpy="0 0 0" />
+      <mass
+        value="0.00921004932723462" />
+      <inertia
+        ixx="3.5616914899486E-06"
+        ixy="-9.0018424934643E-22"
+        ixz="-3.71401510096895E-21"
+        iyy="3.60104166133249E-06"
+        iyz="1.30363664538357E-21"
+        izz="4.55618760339961E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_leg_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_leg_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_leg2"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.058419"
+      rpy="0 0 0" />
+    <parent
+      link="right_leg_Link1" />
+    <child
+      link="right_leg_Link2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_leg_Link3">
+    <inertial>
+      <origin
+        xyz="0.000298628622014659 -0.00164414471390581 -0.0382430116954167"
+        rpy="0 0 0" />
+      <mass
+        value="0.0695870735912847" />
+      <inertia
+        ixx="1.90172698534593E-05"
+        ixy="8.05010943807464E-10"
+        ixz="-5.97671410936914E-13"
+        iyy="1.1319927001743E-05"
+        iyz="-1.43611137846773E-12"
+        izz="1.22856704591215E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_leg_Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_leg_Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_leg3"
+    type="revolute">
+    <origin
+      xyz="0 0.0 -0.0417"
+      rpy="0 0 0" />
+    <parent
+      link="right_leg_Link2" />
+    <child
+      link="right_leg_Link3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_leg_Link4">
+    <inertial>
+      <origin
+        xyz="-1.11963502176168E-08 -0.00146289087774281 -0.0445995629581697"
+        rpy="0 0 0" />
+      <mass
+        value="0.0427023661722271" />
+      <inertia
+        ixx="1.3424469607423E-05"
+        ixy="6.84504216271429E-13"
+        ixz="-3.02168537620558E-15"
+        iyy="7.08177761371648E-06"
+        iyz="-1.12443281771506E-10"
+        izz="9.54792703518981E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_leg_Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_leg_Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_leg4"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0748"
+      rpy="0 0 0" />
+    <parent
+      link="right_leg_Link3" />
+    <child
+      link="right_leg_Link4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_leg_Link5">
+    <inertial>
+      <origin
+        xyz="-1.28348894069298E-08 -0.00126175464164592 -0.0244008780217513"
+        rpy="0 0 0" />
+      <mass
+        value="0.00921004932723462" />
+      <inertia
+        ixx="3.60104166133248E-06"
+        ixy="9.76206105828531E-22"
+        ixz="-1.74117156857151E-21"
+        iyy="3.5616914899486E-06"
+        iyz="3.66275575238481E-21"
+        izz="4.55618760339961E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_leg_Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_leg_Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_leg5"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0603"
+      rpy="0 0 0" />
+    <parent
+      link="right_leg_Link4" />
+    <child
+      link="right_leg_Link5" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_leg_Link6">
+    <inertial>
+      <origin
+        xyz="0.00560810347791624 -0.0124934535348167 -0.00847327236578943"
+        rpy="0 0 0" />
+      <mass
+        value="0.0699485056328663" />
+      <inertia
+        ixx="1.97249570447331E-05"
+        ixy="-1.03000291466078E-07"
+        ixz="5.66550904215841E-08"
+        iyy="3.81576305372732E-05"
+        iyz="1.16816771205396E-07"
+        izz="5.52188002503365E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_leg_Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_leg_Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_leg6"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0417"
+      rpy="0 0 0" />
+    <parent
+      link="right_leg_Link5" />
+    <child
+      link="right_leg_Link6" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_leg_Link1">
+    <inertial>
+      <origin
+        xyz="0.000309855384678834 -0.000105932853462776 -0.0475649313479209"
+        rpy="0 0 0" />
+      <mass
+        value="0.036109580786353" />
+      <inertia
+        ixx="5.65288859195854E-06"
+        ixy="4.95230362541006E-10"
+        ixz="3.64547945498702E-08"
+        iyy="9.56874597042413E-06"
+        iyz="-2.80099571720059E-08"
+        izz="6.33002391725868E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_leg_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_leg_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_leg1"
+    type="revolute">
+    <origin
+      xyz="0 0.0382635 0"
+      rpy="0 0 0" />
+    <parent
+      link="body_link" />
+    <child
+      link="left_leg_Link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_leg_Link2">
+    <inertial>
+      <origin
+        xyz="-5.41060685838035E-13 -1.24491320030451E-11 -0.0244008925219326"
+        rpy="0 0 0" />
+      <mass
+        value="0.00921004932723461" />
+      <inertia
+        ixx="3.5616914899486E-06"
+        ixy="4.59658773399462E-23"
+        ixz="-3.31389232904057E-22"
+        iyy="3.60104166133248E-06"
+        iyz="3.62966852788269E-21"
+        izz="4.5561876033996E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_leg_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_leg_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_leg2"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.058419"
+      rpy="0 0 0" />
+    <parent
+      link="left_leg_Link1" />
+    <child
+      link="left_leg_Link2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_leg_Link3">
+    <inertial>
+      <origin
+        xyz="0.000448611417644212 -0.000258192359539611 -0.0382168496261936"
+        rpy="0 0 0" />
+      <mass
+        value="0.0695870735913904" />
+      <inertia
+        ixx="1.90172698534891E-05"
+        ixy="8.05010943916793E-10"
+        ixz="-5.97680522184214E-13"
+        iyy="1.13199270016959E-05"
+        iyz="-1.43611140508971E-12"
+        izz="1.22856704590978E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_leg_Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_leg_Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_leg3"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0417"
+      rpy="0 0 0" />
+    <parent
+      link="left_leg_Link2" />
+    <child
+      link="left_leg_Link3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_leg_Link4">
+    <inertial>
+      <origin
+        xyz="0.000467595457972817 -0.000118117140763901 -0.0445160663004915"
+        rpy="0 0 0" />
+      <mass
+        value="0.042702366172227" />
+      <inertia
+        ixx="1.3424469607423E-05"
+        ixy="6.84504219403623E-13"
+        ixz="-3.02166009587293E-15"
+        iyy="7.08177761371646E-06"
+        iyz="-1.12443281777924E-10"
+        izz="9.54792703518982E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_leg_Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_leg_Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_leg4"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0748"
+      rpy="0 0 0" />
+    <parent
+      link="left_leg_Link3" />
+    <child
+      link="left_leg_Link4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_leg_Link5">
+    <inertial>
+      <origin
+        xyz="0.000723621630750943 5.17969936216917E-05 -0.0242728568713646"
+        rpy="0 0 0" />
+      <mass
+        value="0.0092100493272346" />
+      <inertia
+        ixx="3.60104166133248E-06"
+        ixy="-5.76163608385862E-22"
+        ixz="5.93036800412236E-21"
+        iyy="3.56169148994857E-06"
+        iyz="4.15906411991662E-21"
+        izz="4.5561876033996E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_leg_Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_leg_Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_leg5"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0603"
+      rpy="0 0 0" />
+    <parent
+      link="left_leg_Link4" />
+    <child
+      link="left_leg_Link5" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_leg_Link6">
+    <inertial>
+      <origin
+        xyz="0.00560810509919187 0.0124934149172235 -0.0084732779690404"
+        rpy="0 0 0" />
+      <mass
+        value="0.0699485180282473" />
+      <inertia
+        ixx="1.97249926778499E-05"
+        ixy="1.0299277145842E-07"
+        ixz="5.66673856376909E-08"
+        iyy="3.81576243578173E-05"
+        iyz="-1.16827451714918E-07"
+        izz="5.52188260293356E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_leg_Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_leg_Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_leg6"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0417"
+      rpy="0 0 0" />
+    <parent
+      link="left_leg_Link5" />
+    <child
+      link="left_leg_Link6" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_arm_Link1">
+    <inertial>
+      <origin
+        xyz="-9.0726037793587E-16 -0.0194600750173041 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.00779307525149815" />
+      <inertia
+        ixx="1.67443946895364E-06"
+        ixy="8.2777365993557E-22"
+        ixz="7.48307566680458E-08"
+        iyy="3.50493277794166E-06"
+        iyz="1.29291998244966E-21"
+        izz="4.40149777227313E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_arm_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_arm_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_arm1"
+    type="revolute">
+    <origin
+      xyz="0 -0.05381 0.063892"
+      rpy="0 0 0" />
+    <parent
+      link="body_link" />
+    <child
+      link="right_arm_Link1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_arm_Link2">
+    <inertial>
+      <origin
+        xyz="0.000249665434656319 -9.5811616418473E-09 -0.0222044853547887"
+        rpy="0 0 0" />
+      <mass
+        value="0.0431074051724793" />
+      <inertia
+        ixx="1.23055898361451E-05"
+        ixy="6.84504218182843E-13"
+        ixz="2.99272050323378E-08"
+        iyy="1.45390024502477E-05"
+        iyz="-3.02164497765368E-15"
+        izz="1.06053508938956E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_arm_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_arm_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_arm2"
+    type="revolute">
+    <origin
+      xyz="0 -0.0384 0"
+      rpy="0 0 0" />
+    <parent
+      link="right_arm_Link1" />
+    <child
+      link="right_arm_Link2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_arm_Link3">
+    <inertial>
+      <origin
+        xyz="-8.73997605542551E-06 -0.00024875184615672 -0.0575809795534767"
+        rpy="0 0 0" />
+      <mass
+        value="0.069232999247785" />
+      <inertia
+        ixx="9.09874667220203E-05"
+        ixy="-6.84504221818347E-13"
+        ixz="1.65052043981023E-08"
+        iyy="8.01492519033891E-05"
+        iyz="5.69737521582002E-08"
+        izz="1.59518686940999E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_arm_Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/right_arm_Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_arm3"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0886"
+      rpy="0 0 0" />
+    <parent
+      link="right_arm_Link2" />
+    <child
+      link="right_arm_Link3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_arm_Link1">
+    <inertial>
+      <origin
+        xyz="-1.72171304990698E-16 0.019460075017305 8.32667268468867E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.00779307525149814" />
+      <inertia
+        ixx="1.6725061348285E-06"
+        ixy="4.68215561803489E-21"
+        ixz="1.79885931496466E-08"
+        iyy="3.50493277794165E-06"
+        iyz="6.13577256205525E-22"
+        izz="4.40343110639835E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_arm_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_arm_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_arm1"
+    type="revolute">
+    <origin
+      xyz="0 0.05381 0.063892"
+      rpy="0 0 0" />
+    <parent
+      link="body_link" />
+    <child
+      link="left_arm_Link1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_arm_Link2">
+    <inertial>
+      <origin
+        xyz="0.000253202399121676 8.79846584478372E-10 -0.0221791231273614"
+        rpy="0 0 0" />
+      <mass
+        value="0.0431074051724792" />
+      <inertia
+        ixx="1.23055898361451E-05"
+        ixy="6.84504218592984E-13"
+        ixz="2.99272050323388E-08"
+        iyy="1.45390024502477E-05"
+        iyz="-3.02163559095748E-15"
+        izz="1.06053508938956E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_arm_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_arm_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_arm2"
+    type="revolute">
+    <origin
+      xyz="0 0.0384 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_arm_Link1" />
+    <child
+      link="left_arm_Link2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_arm_Link3">
+    <inertial>
+      <origin
+        xyz="8.72507778716279E-06 0.000265182848913997 -0.0575809947140529"
+        rpy="0 0 0" />
+      <mass
+        value="0.069232999247785" />
+      <inertia
+        ixx="9.09874667220202E-05"
+        ixy="-6.8450422047042E-13"
+        ixz="-1.65052043977398E-08"
+        iyy="8.0149251903389E-05"
+        iyz="-5.69737521581718E-08"
+        izz="1.59518686940999E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_arm_Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tonypi_urdf/meshes/left_arm_Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_arm3"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0886"
+      rpy="0 0 0" />
+    <parent
+      link="left_arm_Link2" />
+    <child
+      link="left_arm_Link3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
